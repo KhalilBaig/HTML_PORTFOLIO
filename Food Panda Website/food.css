@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+  @media screen and (min-width: 960px){
+    .box-flex-bdr {
+        height: 64px;
+        width: 965px;
+        max-width: 1440px;
+        width: 100%;
+        padding: 0px 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+  }
+}
+.box-flex-bdr-nav{
+    margin-right: auto;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}

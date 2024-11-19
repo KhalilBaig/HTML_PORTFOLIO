@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+nav a{
+    text-decoration: none;
+    margin: 130px;
+    
+    
+}
+header{
+   height: 40px;
+    background-color: aquamarine;
+}
+
+.Nav{
+padding: 8px;
+}
+
+#Box{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(4, 121, 4);
+    border-radius: 50px;
+    margin-left: 40%;
+}
+
+.Box{
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+#boz{
+    position: fixed;
+    right: 10%;
+}
+#container{
+    border: 2px solid;
+    margin: 7px;
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+    background-color: rgb(170, 231, 231);
+}

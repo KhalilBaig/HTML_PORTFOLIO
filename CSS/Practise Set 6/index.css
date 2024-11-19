@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+Nav a {
+  text-decoration: none;
+}
+Nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+}
+header {
+  background-color: rgb(118, 243, 145);
+  height: 30px;
+}
+#image_container {
+  border: 3px solid rgb(10, 150, 40);
+  margin-top: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+img {
+  height: 300px;
+  border: 2px solid rgb(118, 243, 145);
+}
+#flex_container {
+  border: 3px solid;
+  height: 150px;
+  width: 500px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.Box {
+  height: 80px;
+  width: 80px;
+  flex-shrink: 0;
+}
+#box1 {
+  background-color: cadetblue;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid;
+}
+#box2 {
+  background-color: rgb(52, 207, 78);
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#box3 {
+  background-color: rgb(180, 209, 18);
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid;
+}
+
+#box4 {
+  background-color: coral;
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  #box4 {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 400px) {
+  #box4 {
+    background-color: blue;
+  }
+}

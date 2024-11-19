@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress_container{
+            background-color:antiquewhite ;
+            height: 25px;
+            width: 90%;
+            border: 2px solid black;
+            border-radius: 20px;
+            left: 10px;
+        }
+        .prog_bar{
+            background-color: crimson;
+            height: 100%;
+            width: 50%;
+            border-radius: 20px;
+            animation: prog-animation 3s;
+        }
+        @keyframes prog-animation{
+            0%{width: 50%;}
+            50%{width: 95%;}
+            90%{width: 80%;}
+            100%{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="progress_container">
+        <div class="prog_bar"></div>
+    </div>
+</body>
+</html>
