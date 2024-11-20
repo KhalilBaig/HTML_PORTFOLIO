@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>While Loop</title>
+  </head>
+  <body>
+    <script>
+      function primeNumber(num) {
+        for (i = 2; i < num; i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+      let num = 2;
+      let count = 0;
+      while (count < 5) {
+        if (primeNumber(num)) {
+          console.log(num);
+          count++;
+          if(count>=5){
+            break;
+          }
+        }
+        num++;
+      }
+    </script>
+  </body>
+</html>

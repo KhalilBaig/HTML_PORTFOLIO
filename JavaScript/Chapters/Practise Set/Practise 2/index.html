@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Metro Ticket</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h3>Metro Bus Service Islamabad</h3>
+    <img class ="metro" src="The_Red_Metro_Bus_in_Blue_Area.jpg" alt="">
+    <h4>Please select who you are:</h4>
+    <button
+      class="male"
+      onclick="
+    let metroTicketPrice = 100;
+    let discountTicketPrice;
+    let finalPrice;
+    let age = Math.random() * 70;
+    let gender;
+    console.log(age);
+    if(age>0 && age<5){
+        discountTicketPrice= 100 +'%';
+        finalPrice = 0;
+        gender = 'Kid';
+    }else if(age>5 && age<=8){
+        discountTicketPrice= 50 +'%';
+        finalPrice = 100*0.5;
+        gender = 'kid';
+    }else if(age>8 && age<=25){
+        discountTicketPrice= 0+'%';
+        finalPrice = 100;
+        gender = 'Teenager';
+    }else if(age>25 && age<=65){
+        discountTicketPrice= 0+'%';
+        finalPrice = 100;
+        gender = 'Men';
+    }else if(age>65){
+        discountTicketPrice= 30+'%';
+        finalPrice = 100*0.3;
+        gender = 'Men';
+    }
+
+    alert(`    Metro Ticket Price is  RS: ${metroTicketPrice},
+    You are ${gender},
+    You get ${discountTicketPrice} discount,  
+    Your Final Ticket Price is  RS: ${finalPrice}`);
+    "
+    >
+      Male
+    </button>
+
+    <button
+      class="female"
+      onclick="
+   metroTicketPrice = 100;
+   let discountTicketPrice1;
+   let finalPrice1;
+   age = Math.random() * 70;
+   let gender1;
+  console.log(age);
+  if(age>0 && age<5){
+      discountTicketPrice1 = 100 +'%';
+      finalPrice1 = 0;
+      gender1 = 'Kid';
+  }else if(age>5 && age<=8){
+      discountTicketPrice1 = 50 +'%';
+      finalPrice1 = 100*0.5;
+      gender1 = 'kid';
+  }else if(age>8 && age<=25){
+      discountTicketPrice1 = 50+'%';
+      finalPrice1 = 100*0.5;
+      gender1 = 'Teenager';
+  }else if(age>25 && age<=65){
+      discountTicketPrice1 = 50+'%';
+      finalPrice1 = 100*0.5;
+      gender1 = 'Women';
+  }else if(age>65){
+      discountTicketPrice1 = 50+'%';
+      finalPrice1 = 100*0.5;
+      gender1 = 'Women';
+  }
+
+  alert(`  Metro Ticket Price is  RS: ${metroTicketPrice},
+  You are ${gender1},
+  You get ${discountTicketPrice1} discount,  
+  Your Final Ticket Price is  RS: ${finalPrice1}`);
+  "
+    >
+      Female
+    </button>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let refernce1 = {
+        name: "Khalil",
+        age: 24,
+        qualification: "BE Electronics",
+      };
+      let naveedMilk = {
+        customername:'Khalil',
+        price: 220 + "kg",
+        "delivery-time": "In Morning",
+      };
+      function isProductIdentical(refernce1, naveedMilk) {
+        if (typeof refernce1 != "object" || typeof naveedMilk != "object") {
+            console.warn('Parameter passed was not an Object');
+          return false;
+        }
+        if (refernce1 == naveedMilk) {
+          return true;
+        }
+        if(refernce1.name === naveedMilk.name &&
+        refernce1.age === naveedMilk.name &&
+        refernce1.name === naveedMilk.name){
+            return true;
+        }else {
+            return false;
+        }
+      }
+      console.log(isProductIdentical(refernce1,''));
+      console.log(isProductIdentical(refernce1,refernce1));
+      console.log(isProductIdentical(refernce1,naveedMilk));
+    </script>
+  </body>
+</html>

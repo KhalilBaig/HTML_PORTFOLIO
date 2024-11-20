@@ -1,0 +1,22 @@
+#outer_look{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#display{
+    width: 85%;
+    margin: 10px;
+    font-size: 30px;
+}
+.btn-properties{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons{
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}

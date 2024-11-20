@@ -1,0 +1,13 @@
+#my-btn{
+    height: 50px;
+    width: 80px;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+}
+.js-odd{
+    background-color: red;
+}
+.js-even{
+    background-color: green;
+}

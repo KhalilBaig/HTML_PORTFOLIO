@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>3</title>
+    <style>
+      .btn {
+        height: 80px;
+        width: 90px;
+        font-size: large;
+        color: white;
+        background-color: rgb(14, 110, 201);
+        border: none;
+        border-radius: 25%;
+      }
+      .js-double-size {
+        font-size: x-large;
+        height: 160px;
+        width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Like My Channel</button>
+    <script>
+      let btnElement = document.querySelector(".btn");
+      btnElement.addEventListener('click', event =>
+        setTimeout(doubleSize, 2000)
+      )
+      function doubleSize() {
+        let btnElement = document.querySelector(".btn");
+        btnElement.classList.add("js-double-size");
+      }
+    </script>
+  </body>
+</html>

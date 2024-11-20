@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>1</title>
+  </head>
+  <body>
+    <h6 id="current_date"></h6>
+    <h2 id="Greetings"></h2>
+    <script>
+      function Greetings(personName = 'Dear') {
+        let date = new Date();
+        let hour = date.getHours();
+        let displayGreetings = document.querySelector("#Greetings");
+        let displayDate = document.querySelector("#current_date");
+        displayDate.innerText = date;
+        if (hour > 5 && hour < 12) {
+          displayGreetings.innerText = `Good Morning: ${personName}` ;
+        } else if (hour >= 12 && hour <= 18) {
+          displayGreetings.innerText = `Good Afternoon: ${personName}` ;
+        } else {
+          displayGreetings.innerText = `Good Night: ${personName}`;
+        }
+      }
+      Greetings('Khalil')
+    </script>
+  </body>
+</html>
